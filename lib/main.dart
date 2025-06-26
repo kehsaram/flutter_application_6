@@ -93,7 +93,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
-          //
+          // yhr pdjgj
+          //forther goto changes 
           // Column has various properties to control how it sizes itself and
           // how it positions its children. Here we use mainAxisAlignment to
           // center the children vertically; the main axis here is the vertical
@@ -105,11 +106,20 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Welcome to my Flutter app!'), // <-- Added text
+            const Text('Welcome to my Flutter app!'),
             const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Add your action here
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('New button pressed!')),
+                );
+              },
+              child: const Text('New Button'),
             ),
           ],
         ),
