@@ -25,8 +25,9 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // state is not lost during the reload. To reset the state, use hot
         // restart instead.
+        // new blog will 
         //
-        // This works for code too, not just values: Most code changes can be
+        // This works for code too, not just values: Most code changes can be nsfnew
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -104,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text('Welcome to my Flutter app!'), // <-- Added text
             const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
